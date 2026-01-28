@@ -6,10 +6,11 @@
 */
 
 export function arrayFiltering(array, test) {
-    const tab = [];
+    var tab = [];
 
     for (let i = 0; i < array.length; i++) {
-        if (test(array[i]) == true)
+        if (test(array[i]))
             tab.push(i);
     }
+    return tab;
 }
