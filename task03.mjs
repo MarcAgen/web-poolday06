@@ -7,10 +7,10 @@
 
 export function countGs(str) {
 
-    a = 0;
+    var a = 0;
 
-    for (i in str) {
-        if (i == 'G')
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == 'G' || str[i] == 'g')
             a++;
     }
     return a;
